@@ -1,0 +1,25 @@
+.intro {
+    background-color: grey;
+    background-image: url(../img/background/intro-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    min-height: 650px;
+    color: white;
+}
+
+.features {
+    background-color: grey;
+    background-image: url(../img/background/features-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 650px;
+}
+
+.reviews {
+    height: 100vh;
+    min-height: 650px;
+}
