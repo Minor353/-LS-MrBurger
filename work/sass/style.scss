@@ -1,0 +1,31 @@
+/*Шрифты*/
+@import "general/typography.scss";
+
+/*Вспомогательное*/
+
+@import "util/normalize.scss";
+
+@import "util/variable.scss";
+
+/*Компоненты*/
+
+@import "components/wrapper.scss";
+
+@import "components/intro.scss";
+
+@import "components/header.scss";
+
+@import "components/logo.scss";
+
+@import "components/nav-panel.scss";
+
+@import "components/button-submit.scss";
+
+@import "components/pagination.scss";
+
+@import "components/arrow-button.scss";
+
+@import "components/features.scss";
+
+@import "components/reviews.scss";
+

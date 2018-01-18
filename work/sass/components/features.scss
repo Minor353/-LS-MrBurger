@@ -1,0 +1,66 @@
+.features {
+	height: 100vh;
+    min-height: 650px;
+    background-image: url(../img/background/features-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid transparent;
+}
+
+.features__title {
+    font-family: 'Gagalin-Regular';
+    font-size: 72px;
+    color: #2f3234;
+    text-align: center;
+    margin-top: 155px;
+}
+
+.features__items-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+
+.features__item {
+    list-style-type: none;
+    width: 300px;
+    text-align: center;
+}
+
+.features__item-img {
+    width: 98px;
+    height: 88px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
+.features__item-img--meat {
+    background-image: url(../img/icons/meat.svg);
+   
+}
+
+.features__item-img--hand {
+    background-image: url(../img/icons/hand.svg);
+   
+}
+
+.features__item-img--natural {
+    background-image: url(../img/icons/natural.svg);
+}
+
+.features__item-title {
+    font-family: 'Lifehack-Medium';
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.features__item-text {
+    font-family: 'Ubuntu-Light';
+    font-size: 14px;
+    line-height: 24px;
+}

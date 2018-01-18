@@ -1,0 +1,20 @@
+.pagination {
+	position: fixed;
+    right: 33px;
+    top: 75px;
+}
+
+.pagination__item {
+    color: #fff;
+    position: relative;
+}
+
+.pagination__item-active {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 0;
+    left: -23px;
+}

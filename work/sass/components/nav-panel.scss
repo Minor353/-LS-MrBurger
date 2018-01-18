@@ -1,0 +1,22 @@
+.nav-panel__items-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    min-width: 540px;
+    
+}
+
+.nav-panel__item {
+    list-style-type: none;
+    
+}
+
+.nav-panel__item-link {
+    text-decoration: none;
+    font-family: 'Ubuntu-Medium';
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+}

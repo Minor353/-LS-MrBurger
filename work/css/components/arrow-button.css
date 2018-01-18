@@ -1,0 +1,9 @@
+.arrow-button {
+  width: 18px;
+  height: 18px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 12%;
+  transform: rotate(-45deg); }
