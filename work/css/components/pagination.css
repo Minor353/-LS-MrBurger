@@ -1,11 +1,22 @@
 .pagination {
   position: fixed;
-  right: 33px;
-  top: 75px; }
+  right: 45px;
+  top: 71px; }
 
 .pagination__item {
   color: #fff;
-  position: relative; }
+  position: relative;
+  margin: 4px 0; }
+
+.pagination__item-hover {
+  position: absolute;
+  transition-duration: 0.5s;
+  width: 0px;
+  height: 0px;
+  border: 0px solid #fff;
+  border-radius: 50%;
+  top: 9px;
+  left: -14px; }
 
 .pagination__item-active {
   position: absolute;
@@ -15,3 +26,13 @@
   border-radius: 50%;
   top: 0;
   left: -23px; }
+
+.pagination__item:hover .pagination__item-hover {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 0;
+  left: -23px;
+  transition-duration: 0.5s; }

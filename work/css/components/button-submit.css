@@ -6,4 +6,9 @@
   text-transform: uppercase;
   padding: 10px 15px;
   background-color: #e45028;
-  border-radius: 5px; }
+  border-radius: 5px;
+  transition-duration: 0.3s; }
+
+.button-submit:hover {
+  background-color: #bc9422;
+  transition-duration: 0.3s; }

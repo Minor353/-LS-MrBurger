@@ -1,11 +1,14 @@
 /*Шрифты*/
 @import "general/typography.scss";
 
+@import "general/container.scss";
+
 /*Вспомогательное*/
 
 @import "util/normalize.scss";
 
 @import "util/variable.scss";
+
 
 /*Компоненты*/
 
@@ -28,4 +31,6 @@
 @import "components/features.scss";
 
 @import "components/reviews.scss";
+
+@import "components/button-info.scss";
 

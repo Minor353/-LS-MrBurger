@@ -4,13 +4,17 @@
     justify-content: space-around;
     padding: 0;
     margin: 0;
-    min-width: 540px;
-    
+    min-width: 518px;
 }
 
 .nav-panel__item {
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition-duration: 1s;
+}
+
+.nav-panel__item:first-child {
     list-style-type: none;
-    
 }
 
 .nav-panel__item-link {
@@ -19,4 +23,9 @@
     font-size: 13px;
     color: #fff;
     text-transform: uppercase;
+}
+
+.nav-panel__item:hover {
+    border-bottom: 2px solid #fff;
+    transition-duration: 1s;
 }

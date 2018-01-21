@@ -5,5 +5,30 @@
   border-bottom: 3px solid #fff;
   border-radius: 5px;
   margin: 0 auto;
-  margin-top: 12%;
-  transform: rotate(-45deg); }
+  margin-bottom: 40px;
+  transform: rotate(-45deg);
+  position: relative;
+  transition-duration: 0.2s; }
+
+.button-submit-decor {
+  position: absolute;
+  top: 6px;
+  left: -20px;
+  width: 28px;
+  height: 28px;
+  border-left: 0px solid #fff;
+  border-bottom: 0px solid #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  transition-duration: 0.2s; }
+
+.arrow-button:hover .button-submit-decor {
+  border-left: 3px solid #ffcd78;
+  border-bottom: 3px solid #ffcd78;
+  transition-duration: 0.2s; }
+
+.arrow-button:hover {
+  border-left: 3px solid #ffcd78;
+  border-bottom: 3px solid #ffcd78;
+  transition-duration: 0.2s; }
