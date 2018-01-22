@@ -1,0 +1,70 @@
+.accordeon {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  color: #fff; }
+
+.accordeon__item {
+  margin-bottom: 30px; }
+
+.accordeon__item-title {
+  font-family: 'Gagalin-Regular';
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
+  transition-duration: 0.3s;
+  cursor: pointer; }
+
+.accordeon__item-content {
+  height: 0px;
+  display: flex;
+  overflow: hidden;
+  transition-duration: 0.5s; }
+
+.accordeon_item-ava-wrapper {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.accordeon__item-ava {
+  height: 100%;
+  width: 100%; }
+
+.accordeon__item-text {
+  width: 240px;
+  padding: 0 20px;
+  font-family: 'Ubuntu-Light';
+  font-size: 14px;
+  line-height: 24px; }
+  .accordeon__item-text h5 {
+    font-family: 'Ubuntu-B';
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px; }
+
+.accordeon__item-title:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #f9b43b;
+  transition-duration: 0.5s; }
+
+.accordeon__item-title:hover {
+  color: #f9b43b;
+  transition-duration: 0.3s; }
+
+.accordeon__item--active .accordeon__item-content {
+  height: 100px;
+  transition-duration: 0.5s; }
+.accordeon__item--active .accordeon__item-title {
+  color: #f9b43b; }
+.accordeon__item--active .accordeon__item-title:before {
+  border-top: 0px solid transparent;
+  border-bottom: 8px solid #f9b43b;
+  transition-duration: 0.5s; }

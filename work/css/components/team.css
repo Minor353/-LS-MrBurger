@@ -1,0 +1,27 @@
+.team {
+  height: 100vh;
+  background-image: url(../img/background/team-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: flex-end; }
+
+.team__content-wrap {
+  height: 100vh;
+  width: 50vw;
+  background-color: RGBA(50, 53, 54, 0.8); }
+
+.team__content {
+  width: 380px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 50px; }
+
+.team__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: 'Gagalin-Regular';
+  font-size: 72px;
+  color: #f9b43b;
+  font-weight: 100; }
