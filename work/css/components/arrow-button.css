@@ -1,34 +1,35 @@
 .arrow-button {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 28px; }
+
+.arrow-button__first {
   width: 18px;
   height: 18px;
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
   border-radius: 5px;
   margin: 0 auto;
-  margin-bottom: 40px;
   transform: rotate(-45deg);
-  position: relative;
   transition-duration: 0.2s; }
 
-.button-submit-decor {
-  position: absolute;
-  top: 6px;
-  left: -20px;
+.arrow-button__second {
   width: 28px;
   height: 28px;
   border-left: 0px solid #fff;
   border-bottom: 0px solid #fff;
   border-radius: 5px;
+  transform: rotate(-45deg);
   margin: 0 auto;
-  margin-bottom: 40px;
   transition-duration: 0.2s; }
 
-.arrow-button:hover .button-submit-decor {
+.arrow-button:hover .arrow-button__second {
   border-left: 3px solid #ffcd78;
   border-bottom: 3px solid #ffcd78;
   transition-duration: 0.2s; }
 
-.arrow-button:hover {
+.arrow-button:hover .arrow-button__first {
   border-left: 3px solid #ffcd78;
   border-bottom: 3px solid #ffcd78;
   transition-duration: 0.2s; }

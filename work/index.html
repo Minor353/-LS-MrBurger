@@ -12,7 +12,9 @@
         <section class="intro">
             <header class="header  container">
                 <div class="logo">
-                    <img src="img/icons/logo.svg" alt="Logo">
+                    <a href="#">
+                        <img src="img/icons/logo.svg" alt="Logo">
+                    </a>
                 </div>
                 <nav class="nav-panel">
                     <ul class="nav-panel__items-wrapper">
@@ -33,84 +35,42 @@
                 <div class="intro__content-img">
                     <img src="img/content/burger.png" alt="Burger">
                 </div>
-                <div class="intro__content-text">
+                <h1 class="intro__content-text">
                     <span class="intro__content-title">Мы делаем</span>
                     <span class="intro__content-description">натуральные бургеры</span>
-                </div>
+                </h1>
             </div>
 
             <a href="#" class="arrow-button">
-                <div class="button-submit-decor"></div>
+                <div class="arrow-button__first"></div>
+                <div class="arrow-button__second"></div>
             </a>
         </section>
 
-        <aside class="pagination">
-            <ul class="pagination__items-wrapper">
-                <li class="pagination__item">
-                    <a href="#" class="pagination__item-link">
-                        <div class="pagination__item-active  pagination__item-hover"></div>
-                    </a>
-                </li>
-                <li class="pagination__item">
-                    <a href="#" class="pagination__item-link">
-                        <div class="pagination__item-disable  pagination__item-hover"></div>
-                    </a>
-                </li>
-                <li class="pagination__item">
-                    <a href="#" class="pagination__item-link">
-                        <div class="pagination__item-disable  pagination__item-hover"></div>
-                    </a>
-                </li>
-                <li class="pagination__item">
-                    <a href="#" class="pagination__item-link">
-                        <div class="pagination__item-disable  pagination__item-hover"></div>
-                    </a>
-                </li>
-                <li class="pagination__item">
-                    <a href="#" class="pagination__item-link">
-                        <div class="pagination__item-disable  pagination__item-hover"></div>
-                    </a>
-                </li>
-                <li class="pagination__item">
-                    <a href="#" class="pagination__item-link">
-                        <div class="pagination__item-disable  pagination__item-hover"></div>
-                    </a>
-                </li>
-                <li class="pagination__item">
-                    <a href="#" class="pagination__item-link">
-                        <div class="pagination__item-disable  pagination__item-hover"></div>
-                    </a>
-                </li>
-                <li class="pagination__item">
-                    <a href="#" class="pagination__item-link">
-                        <div class="pagination__item-disable  pagination__item-hover"></div>
-                    </a>
-                </li>
-            </ul>
-        </aside>
-
         <section class="features">
-            <h2 class="features__title">Мы лучшие</h2>
+            <div class="features__wrapper  container">
+                <h2 class="features__title">Мы лучшие</h2>
 
-            <ul class="features__items-wrapper  container">
-                <li class="features__item">
-                    <div class="features__item-img  features__item-img--meat"></div>
-                    <div class="features__item-title">100% свежее мясо</div>
-                    <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
-                </li>
+                <ul class="features__items-wrapper">
+                    <li class="features__item">
+                        <div class="features__item-img  features__item-img--meat"></div>
+                        <div class="features__item-title">100% свежее мясо</div>
+                        <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                    </li>
 
-                <li class="features__item">
-                    <div class="features__item-img  features__item-img--hand"></div>
-                    <div class="features__item-title">Ручная сборка</div>
-                    <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
-                </li>
+                    <li class="features__item">
+                        <div class="features__item-img  features__item-img--hand"></div>
+                        <div class="features__item-title">Ручная сборка</div>
+                        <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+                    </li>
 
-                <li class="features__item">
-                    <div class="features__item-img  features__item-img--natural"></div>
-                    <div class="features__item-title">Натуральные ингридиенты</div>
-                    <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
-                </li>
-            </ul>
+                    <li class="features__item">
+                        <div class="features__item-img  features__item-img--natural"></div>
+                        <div class="features__item-title">Натуральные ингридиенты</div>
+                        <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="team">
@@ -119,46 +79,54 @@
                     <h2 class="team__title">Команда</h2>
                     <ul class="accordeon">
                         <li class="accordeon__item">
-                            <h5 class="accordeon__item-title">Дэниэл Редклиф</h5>
+                            <a href="#" class="accordeon__item-title">Дэниэл Редклиф</a>
                             <div class="accordeon__item-content">
-                                <div class="accordeon_item-ava-wrapper">
-                                    <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__item-ava">
+                                <div class="accordeon_ava-wrapper">
+                                    <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__ava">
                                 </div>
                                 <div class="accordeon__item-text">
-                                    <h5>Оператор</h5>С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                                    <h5>Оператор</h5>
+                                    <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                                </div>
                             </div>
                         </li>
 
                         <li class="accordeon__item">
-                            <h5 class="accordeon__item-title">Ричард Джеймс</h5>
+                            <a href="#" class="accordeon__item-title">Ричард Джеймс</a>
                             <div class="accordeon__item-content">
-                                <div class="accordeon_item-ava-wrapper">
-                                    <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__item-ava">
+                                <div class="accordeon_ava-wrapper">
+                                    <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__ava">
                                 </div>
                                 <div class="accordeon__item-text">
-                                    <h5>Оператор</h5>С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                                    <h5>Оператор</h5>
+                                    <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                                </div>
                             </div>
                         </li>
 
                         <li class="accordeon__item">
-                            <h5 class="accordeon__item-title">Джейк Финн</h5>
+                            <a href="#" class="accordeon__item-title">Джейк Финн</a>
                             <div class="accordeon__item-content">
-                                <div class="accordeon_item-ava-wrapper">
-                                    <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__item-ava">
+                                <div class="accordeon_ava-wrapper">
+                                    <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__ava">
                                 </div>
                                 <div class="accordeon__item-text">
-                                    <h5>Оператор</h5>С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                                    <h5>Оператор</h5>
+                                    <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                                </div>
                             </div>
                         </li>
 
                         <li class="accordeon__item">
-                            <h5 class="accordeon__item-title">Николай Иванов</h5>
+                            <a href="#" class="accordeon__item-title">Николай Иванов</a>
                             <div class="accordeon__item-content">
-                                <div class="accordeon_item-ava-wrapper">
-                                    <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__item-ava">
+                                <div class="accordeon_ava-wrapper">
+                                    <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__ava">
                                 </div>
                                 <div class="accordeon__item-text">
-                                    <h5>Оператор</h5>С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                                    <h5>Оператор</h5>
+                                    <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -170,26 +138,26 @@
             <h2 class="menu__title">Меню</h2>
             <ul class="horizon-accardeon">
                 <li class="horizon-accordeon__item">
-                    <div class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--meat">
+                    <a href="#" class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--meat">
                         <h3 class="horizon-accordeon__title">Для мясоедов</h3>
-                    </div>
+                    </a>
                     <div class="horizon-accordeon__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
                     </div>
                 </li>
 
 
                 <li class="horizon-accordeon__item">
-                    <div class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--veget">
+                    <a href="#" class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--veget">
                         <h3 class="horizon-accordeon__title">Вегетарианское</h3>
-                    </div>
+                    </a>
                     <div class="horizon-accordeon__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
                     </div>
                 </li>
 
                 <li class="horizon-accordeon__item">
-                    <div class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--diet">
+                    <a href="#" class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--diet">
                         <h3 class="horizon-accordeon__title">Диетическое</h3>
-                    </div>
+                    </a>
                     <div class="horizon-accordeon__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
                     </div>
                 </li>
@@ -276,12 +244,12 @@
         <section class="map">
             <footer class="footer">
                 <div class="footer__content-wrapper  container">
-                    <div class="footer__left-side-content">
-                        <div class="footer__left-side-text">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                        <a href="tel:+78123771377" class="footer__left-side-link">+7 (812) 377-13-77</a>
+                    <div class="footer__left-side">
+                        <div class="footer__text">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                        <a href="tel:+78123771377" class="footer__link">+7 (812) 377-13-77</a>
                     </div>
 
-                    <div class="footer__right-side-content">
+                    <div class="footer__right-side">
                         <ul class="social">
                             <li class="social__link-wrapper">
                                 <a href="#" class="social__link  social__link--vk"></a>
@@ -300,6 +268,51 @@
                 </div>
             </footer>
         </section>
+
+        <aside class="pagination">
+            <ul class="pagination__items-wrapper">
+                <li class="pagination__item">
+                    <a href="#" class="pagination__item-link">
+                        <div class="pagination__item-active  pagination__item-hover"></div>
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__item-link">
+                        <div class="pagination__item-disable  pagination__item-hover"></div>
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__item-link">
+                        <div class="pagination__item-disable  pagination__item-hover"></div>
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__item-link">
+                        <div class="pagination__item-disable  pagination__item-hover"></div>
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__item-link">
+                        <div class="pagination__item-disable  pagination__item-hover"></div>
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__item-link">
+                        <div class="pagination__item-disable  pagination__item-hover"></div>
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__item-link">
+                        <div class="pagination__item-disable  pagination__item-hover"></div>
+                    </a>
+                </li>
+                <li class="pagination__item">
+                    <a href="#" class="pagination__item-link">
+                        <div class="pagination__item-disable  pagination__item-hover"></div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
     </div>
 
     <script src="js/accordeon.js"></script>

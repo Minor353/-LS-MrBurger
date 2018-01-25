@@ -11,7 +11,9 @@
 .horizon-accordeon__title-wrapper {
   width: 80px;
   height: 100%;
-  position: relative; }
+  position: relative;
+  text-decoration: none;
+  color: #fff; }
 
 .horizon-accordeon__title {
   font-family: 'Gagalin-Regular';

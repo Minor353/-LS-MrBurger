@@ -13,6 +13,8 @@
     font-family: 'Gagalin-Regular';
     font-size: 14px;
     font-weight: 300;
+    text-decoration: none;
+    color: #fff;
     position: relative;
     transition-duration: 0.3s;
     cursor: pointer;
@@ -25,14 +27,14 @@
     transition-duration: 0.5s;
 }
 
-.accordeon_item-ava-wrapper {
+.accordeon_ava-wrapper {
     height: 100px;
     width: 100px;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.accordeon__item-ava {
+.accordeon__ava {
     height: 100%;
     width: 100%;
 }
@@ -48,6 +50,10 @@
         font-size: 14px;
         margin-top: 0;
         margin-bottom: 10px;
+    }
+    
+    p {
+        margin: 0;
     }
 }
 

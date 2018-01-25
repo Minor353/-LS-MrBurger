@@ -9,11 +9,11 @@
     display: flex;
 }
 
-.footer__left-side-content, .footer__right-side-content {
+.footer__left-side, .footer__right-side {
     width: 50%;
 }
 
-.footer__left-side-text {
+.footer__text {
     font-family: 'Ubuntu-Light';
     font-weight: 100;
     font-size: 14px;
@@ -21,7 +21,7 @@
     margin-bottom: 8px;
 }
 
-.footer__left-side-link {
+.footer__link {
     text-decoration: none;
     font-family: 'Ubuntu-B';
     font-weight: 500;

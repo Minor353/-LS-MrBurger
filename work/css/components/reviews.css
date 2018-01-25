@@ -22,7 +22,8 @@
   font-family: 'Ubuntu-Light';
   font-weight: 100;
   font-size: 14px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin-bottom: 15px; }
 
 .reviews__items-wrapper {
   padding: 0;
