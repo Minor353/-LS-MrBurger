@@ -79,7 +79,7 @@
                     <h2 class="team__title">Команда</h2>
                     <ul class="accordeon">
                         <li class="accordeon__item">
-                            <a href="#" class="accordeon__item-title">Дэниэл Редклиф</a>
+                            <a href="#" class="accordeon__item-title" onclick="event.preventDefault()">Дэниэл Редклиф</a>
                             <div class="accordeon__item-content">
                                 <div class="accordeon_ava-wrapper">
                                     <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__ava">
@@ -92,7 +92,7 @@
                         </li>
 
                         <li class="accordeon__item">
-                            <a href="#" class="accordeon__item-title">Ричард Джеймс</a>
+                            <a href="#" class="accordeon__item-title" onclick="event.preventDefault()">Ричард Джеймс</a>
                             <div class="accordeon__item-content">
                                 <div class="accordeon_ava-wrapper">
                                     <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__ava">
@@ -105,7 +105,7 @@
                         </li>
 
                         <li class="accordeon__item">
-                            <a href="#" class="accordeon__item-title">Джейк Финн</a>
+                            <a href="#" class="accordeon__item-title" onclick="event.preventDefault()">Джейк Финн</a>
                             <div class="accordeon__item-content">
                                 <div class="accordeon_ava-wrapper">
                                     <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__ava">
@@ -118,7 +118,7 @@
                         </li>
 
                         <li class="accordeon__item">
-                            <a href="#" class="accordeon__item-title">Николай Иванов</a>
+                            <a href="#" class="accordeon__item-title" onclick="event.preventDefault()">Николай Иванов</a>
                             <div class="accordeon__item-content">
                                 <div class="accordeon_ava-wrapper">
                                     <img src="img/content/team-photo.png" alt="Avatar" class="accordeon__ava">
@@ -138,7 +138,7 @@
             <h2 class="menu__title">Меню</h2>
             <ul class="horizon-accardeon">
                 <li class="horizon-accordeon__item">
-                    <a href="#" class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--meat">
+                    <a href="#" class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--meat" onclick="event.preventDefault()">
                         <h3 class="horizon-accordeon__title">Для мясоедов</h3>
                     </a>
                     <div class="horizon-accordeon__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
@@ -147,7 +147,7 @@
 
 
                 <li class="horizon-accordeon__item">
-                    <a href="#" class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--veget">
+                    <a href="#" class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--veget" onclick="event.preventDefault()">
                         <h3 class="horizon-accordeon__title">Вегетарианское</h3>
                     </a>
                     <div class="horizon-accordeon__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
@@ -155,7 +155,7 @@
                 </li>
 
                 <li class="horizon-accordeon__item">
-                    <a href="#" class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--diet">
+                    <a href="#" class="horizon-accordeon__title-wrapper  horizon-accordeon__title-wrapper--diet" onclick="event.preventDefault()">
                         <h3 class="horizon-accordeon__title">Диетическое</h3>
                     </a>
                     <div class="horizon-accordeon__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
@@ -239,6 +239,85 @@
                     </article>
                 </li>
             </ul>
+        </section>
+
+        <section class="order">
+            <div class="order__wrapper  container">
+                <h2 class="order__title">Закажите доставку</h2>
+
+                <form action="#" class="form">
+                    <div class="form__side">
+                        <div class="form__section">
+                            <label class="form__block">
+                                <div class="form__title">Имя</div>
+                                <input type="text" name="" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Телефон</div>
+                                <input type="text" name="" class="form__input">
+                            </label>
+                        </div>
+
+                        <div class="form__section">
+                            <label class="form__block">
+                                <div class="form__title">Улица</div>
+                                <input type="text" name="" class="form__input">
+                            </label>
+                        </div>
+
+                        <div class="form__section">
+                            <label class="form__block">
+                                <div class="form__title">Дом</div>
+                                <input type="text" name="" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Корпус</div>
+                                <input type="text" name="" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Квартира</div>
+                                <input type="text" name="" class="form__input">
+                            </label>
+                            <label class="form__block">
+                                <div class="form__title">Этаж</div>
+                                <input type="text" name="" class="form__input">
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form__side">
+                       <div class="form__section  form__block--margin">
+                            <label class="form__block">
+                                <div class="form__title">Комментарии</div>
+                                <textarea name="coment" id="coment" cols="30" rows="10"  class="form__input  form__imput--textarea"></textarea>
+                            </label>
+                        </div>
+                        
+                        <div class="form__section">
+                            <label class="form__block">
+                                <div class="form__title">Потребуется сдача</div>
+                                <input type="radio" name="pay" value="money"  class="form__radio">
+                            </label>
+                            <label class="form__block">
+                                <span class="form__title">Оплата по карте</span>
+                                <input type="radio" name="pay" value="card"  class="form__radio">
+                            </label>
+                        </div>
+                        
+                        <div class="form__section">
+                            <label class="form__block">
+                                <div class="form__title">Не перезванивать</div>
+                                <input type="checkbox" name="pay" value="money"  class="form__check">
+                            </label>
+                        </div>
+                        
+                        <div class="form__section">
+                            <button type="submit" class="button-submit  button-submit--margin">Заказать</button>
+                            <button type="reset" class="button-reset">Очистить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <section class="map">

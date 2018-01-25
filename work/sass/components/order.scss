@@ -1,0 +1,22 @@
+.order {
+    height: 100vh;
+    background-image: url(../img/background/order-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+} 
+
+.order__wrapper {
+    margin: auto;
+}
+
+.order__title {
+    font-family: 'Gagalin-Regular';
+    font-weight: 300;
+    font-size: 71px;
+    text-align: center;
+    color: #f9b43b;
+    margin: 0;
+    margin-bottom: 60px;
+}
