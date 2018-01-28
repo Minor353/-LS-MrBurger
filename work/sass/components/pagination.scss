@@ -3,10 +3,15 @@
     right: 45px;
     top: 71px;
     z-index: 25;
+    font-size: 16px;
+    
+    @include tablet() {
+        display: none;
+    }
 }
 
 .pagination__item {
-    color: #fff;
+    color: $white;
     position: relative;
     margin: 4px 0 ;
 }
@@ -16,7 +21,7 @@
 	transition-duration: 0.5s;
     width: 0px;
     height: 0px;
-    border: 0px solid #fff;
+    border: 0px solid $white;
     border-radius: 50%;
     top: 9px;
     left: -14px;
@@ -26,7 +31,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     border-radius: 50%;
     top: 0;
     left: -23px;
@@ -38,7 +43,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     border-radius: 50%;
     top: 0;
     left: -23px;

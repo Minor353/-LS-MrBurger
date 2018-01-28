@@ -6,12 +6,16 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
+    @include phone() {
+        justify-content: center;
+    }
 }
 
 .social__link-wrapper {
-    width: 22px;
-    height: 22px;
-    margin-left: 18px;
+    width: rem(22px);
+    height: rem(22px);
+    margin-left: rem(18px);
 }
 
 .social__link {
@@ -21,25 +25,41 @@
 }
 
 .social__link--vk {
-    background-image: url(../img/icons/vk.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    fill: #5c5c5c;
+    width: rem(22px);
+    height: rem(22px);
+    
+    &:hover {
+        fill: $white;
+    }
 }
 
 .social__link--fb {
-    background-image: url(../img/icons/fb.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    fill: #5c5c5c;
+    width: rem(22px);
+    height: rem(22px);
+    
+    &:hover {
+        fill: $white;
+    }
 }
 
 .social__link--inst {
-    background-image: url(../img/icons/inst.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    fill: #5c5c5c;
+    width: rem(22px);
+    height: rem(22px);
+    
+    &:hover {
+        fill: $white;
+    }
 }
 
 .social__link--tw {
-    background-image: url(../img/icons/twitter.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    fill: #5c5c5c;
+    width: rem(22px);
+    height: rem(22px);
+    
+    &:hover {
+        fill: $white;
+    }
 }

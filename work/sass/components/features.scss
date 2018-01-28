@@ -1,10 +1,9 @@
 .features {
-	height: 100vh;
+    height: 100vh;
+    min-height: rem(620px);
     min-height: 650px;
-    min-width: 1100px;
     background-image: url(../img/background/features-bg.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    @include bg();
     border: 1px solid transparent;
     display: flex;
 }
@@ -16,58 +15,83 @@
 .features__title {
     font-family: 'Gagalin-Regular';
     font-weight: 300;
-    font-size: 72px;
-    color: #2f3234;
+    font-size: rem(72px);
+    color: $grey;
     text-align: center;
-    margin-bottom: 52px;
+    margin-top: 0;
+    margin-bottom: rem(52px);
 }
 
 .features__items-wrapper {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    
+    @include phone() {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
+.features__item-contetnt {
+    @include phone() {
+        text-align: left;
+        box-sizing: border-box;
+        padding-left: 25px;
+    }
 }
 
 .features__item {
     list-style-type: none;
-    width: 300px;
+    width: rem(300px);
     text-align: center;
+    
+    @include phone() {
+        display: flex;
+        width: 90%;
+        margin-bottom: 15px;
+    }
 }
 
 .features__item-img {
-    width: 98px;
-    height: 88px;
+    width: rem(98px);
+    height: rem(88px);
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 .features__item-img--meat {
-    background-image: url(../img/icons/meat.svg);
-   
+    width: rem(98px);
+    height: rem(88px);
+    fill: $red; 
 }
 
 .features__item-img--hand {
-    background-image: url(../img/icons/hand.svg);
-   
+    width: rem(98px);
+    height: rem(88px);
+    fill: $yellow;
 }
 
 .features__item-img--natural {
-    background-image: url(../img/icons/natural.svg);
+    width: rem(98px);
+    height: rem(88px);
+    fill: $green;
 }
 
 .features__item-title {
     font-family: 'Lifehack-Medium';
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 15px;
+    font-size: rem(24px);
+    line-height: rem(28px);
+    margin-bottom: rem(15px);
 }
 
 .features__item-text {
     font-family: 'Ubuntu-Light';
     font-weight: 100;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
 }

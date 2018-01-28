@@ -3,13 +3,17 @@
     height: 40px; 
     margin: 0 auto;
     margin-bottom: 28px;
+    
+    @include phone() {
+        margin-bottom: 20px;
+    }
 }
 
 .arrow-button__first {
     width: 18px;
     height: 18px;
-    border-left: 3px solid #fff;
-    border-bottom: 3px solid #fff;
+    border-left: 3px solid $white;
+    border-bottom: 3px solid $white;
     border-radius: 5px;
     margin: 0 auto;
     transform: rotate(-45deg);
@@ -19,8 +23,8 @@
 .arrow-button__second {
     width: 28px;
     height: 28px;
-    border-left: 0px solid #fff;
-    border-bottom: 0px solid #fff;
+    border-left: 0px solid $white;
+    border-bottom: 0px solid $white;
     border-radius: 5px;
     transform: rotate(-45deg);
     margin: 0 auto;
@@ -28,13 +32,13 @@
 }
 
 .arrow-button:hover .arrow-button__second {
-    border-left: 3px solid #ffcd78;
-    border-bottom: 3px solid #ffcd78;
+    border-left: 3px solid $yellow;
+    border-bottom: 3px solid $yellow;
     transition-duration: 0.2s;
 }
 
 .arrow-button:hover .arrow-button__first {
-    border-left: 3px solid #ffcd78;
-    border-bottom: 3px solid #ffcd78;
+    border-left: 3px solid $yellow;
+    border-bottom: 3px solid $yellow;
     transition-duration: 0.2s;
 }

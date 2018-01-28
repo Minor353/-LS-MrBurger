@@ -1,8 +1,8 @@
 .team {
 	height: 100vh;
+    min-height: rem(620px);
     background-image: url(../img/background/team-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include bg();
     background-position: top;
     display: flex;
     justify-content: flex-end;
@@ -12,20 +12,33 @@
     height: 100vh;
     width: 50vw;
     background-color: RGBA(50,53,54,0.8);
+    
+    @include tablet() {
+        width: 100vw;
+        display: flex;
+    }
 }
 
 .team__content {
-    width: 380px;
+    width: rem(380px);
     margin: 0 auto;
-    padding-top: 100px; 
-    padding-bottom: 50px;
+    padding-top: rem(100px); 
+    padding-bottom: rem(50px);
+    
+    @include tablet() {
+        margin: auto;
+    }
 }
 
 .team__title {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
     font-family: 'Gagalin-Regular';
-    font-size: 72px;
-    color: #f9b43b;
+    font-size: rem(72px);
+    color: $yellow;
     font-weight: 100;
+    
+    @include tablet() {
+        text-align: center;
+    }
 }

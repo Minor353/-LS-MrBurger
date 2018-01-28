@@ -1,6 +1,6 @@
 .logo {
-  width: 98px;
-  height: 74px;
+  width: rem(98px);
+  height: rem(74px);
   margin-right: auto; }
   .logo img {
     width: 100%;

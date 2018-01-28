@@ -1,10 +1,12 @@
 .map {
 	height: 100vh;
+    min-height: rem(620px);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+}
+
+.map__section {
+    flex: 1;
     background-image: url(../img/background/map-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @include bg();
 }

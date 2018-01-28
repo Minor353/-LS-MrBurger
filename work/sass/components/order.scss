@@ -1,9 +1,8 @@
 .order {
     height: 100vh;
+    min-height: rem(620px);
     background-image: url(../img/background/order-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @include bg();
     display: flex;
 } 
 
@@ -14,9 +13,13 @@
 .order__title {
     font-family: 'Gagalin-Regular';
     font-weight: 300;
-    font-size: 71px;
+    font-size: rem(71px);
     text-align: center;
-    color: #f9b43b;
+    color: $yellow;
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
+    
+    @include phone() {
+        margin-bottom: 0.75rem;
+    }
 }

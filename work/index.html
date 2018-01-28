@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mr.Burger</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,7 +27,14 @@
                         <li class="nav-panel__item"><a href="#" class="nav-panel__item-link">Контакты</a></li>
                     </ul>
                 </nav>
+
                 <a href="#" class="button-submit">Заказать</a>
+
+                <a href="#">
+                    <div class="burger">
+                    </div>
+                </a>
+
             </header>
 
 
@@ -53,21 +61,39 @@
 
                 <ul class="features__items-wrapper">
                     <li class="features__item">
-                        <div class="features__item-img  features__item-img--meat"></div>
-                        <div class="features__item-title">100% свежее мясо</div>
-                        <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                        <div class="features__item-img">
+                            <svg class="features__item-img--meat">
+                                  <use xlink:href="img/sprite/sprite.svg#meat"></use>
+                            </svg>
+                        </div>
+                        <div class="features__item-contetnt">
+                            <div class="features__item-title">100% свежее мясо</div>
+                            <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                        </div>
                     </li>
 
                     <li class="features__item">
-                        <div class="features__item-img  features__item-img--hand"></div>
-                        <div class="features__item-title">Ручная сборка</div>
-                        <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+                        <div class="features__item-img">
+                            <svg class="features__item-img--hand">
+                                  <use xlink:href="img/sprite/sprite.svg#hand"></use>
+                            </svg>
+                        </div>
+                        <div class="features__item-contetnt">
+                            <div class="features__item-title">Ручная сборка</div>
+                            <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+                        </div>
                     </li>
 
                     <li class="features__item">
-                        <div class="features__item-img  features__item-img--natural"></div>
-                        <div class="features__item-title">Натуральные ингридиенты</div>
-                        <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+                        <div class="features__item-img">
+                            <svg class="features__item-img--natural">
+                                  <use xlink:href="img/sprite/sprite.svg#natural"></use>
+                            </svg>
+                        </div>
+                        <div class="features__item-contetnt">
+                            <div class="features__item-title">Натуральные ингридиенты</div>
+                            <div class="features__item-text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -265,7 +291,7 @@
                             </label>
                         </div>
 
-                        <div class="form__section">
+                        <div class="form__section  form__section--position">
                             <label class="form__block">
                                 <div class="form__title">Дом</div>
                                 <input type="text" name="" class="form__input">
@@ -274,43 +300,43 @@
                                 <div class="form__title">Корпус</div>
                                 <input type="text" name="" class="form__input">
                             </label>
-                            <label class="form__block">
+                            <label class="form__block  form__block--mobile-margin">
                                 <div class="form__title">Квартира</div>
                                 <input type="text" name="" class="form__input">
                             </label>
-                            <label class="form__block">
+                            <label class="form__block  form__block--mobile-none">
                                 <div class="form__title">Этаж</div>
                                 <input type="text" name="" class="form__input">
                             </label>
                         </div>
                     </div>
-                    
-                    <div class="form__side">
-                       <div class="form__section  form__block--margin">
+
+                    <div class="form__side  form__side--flex">
+                        <div class="form__section  form__block--margin  form__section--comment-width">
                             <label class="form__block">
                                 <div class="form__title">Комментарии</div>
                                 <textarea name="coment" id="coment" cols="30" rows="10"  class="form__input  form__imput--textarea"></textarea>
                             </label>
                         </div>
-                        
-                        <div class="form__section">
+
+                        <div class="form__section  form__section--radio-width">
                             <label class="form__block">
-                                <div class="form__title">Потребуется сдача</div>
-                                <input type="radio" name="pay" value="money"  class="form__radio">
+                                <input type="radio" name="pay" value="money"  class="form__radio" checked>
+                                <div class="form__title  form__title--padding  form__title-radio">Потребуется сдача</div>
                             </label>
                             <label class="form__block">
-                                <span class="form__title">Оплата по карте</span>
-                                <input type="radio" name="pay" value="card"  class="form__radio">
+                                 <input type="radio" name="pay" value="card"  class="form__radio">
+                                <div class="form__title  form__title--padding  form__title-radio">Оплата по карте</div>
                             </label>
                         </div>
-                        
+
                         <div class="form__section">
                             <label class="form__block">
-                                <div class="form__title">Не перезванивать</div>
                                 <input type="checkbox" name="pay" value="money"  class="form__check">
+                                <div class="form__title  form__title--padding  form__title-check">Не перезванивать</div>
                             </label>
                         </div>
-                        
+
                         <div class="form__section">
                             <button type="submit" class="button-submit  button-submit--margin">Заказать</button>
                             <button type="reset" class="button-reset">Очистить</button>
@@ -321,26 +347,49 @@
         </section>
 
         <section class="map">
+            <div class="map__section">
+
+            </div>
             <footer class="footer">
                 <div class="footer__content-wrapper  container">
                     <div class="footer__left-side">
                         <div class="footer__text">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                        <a href="tel:+78123771377" class="footer__link">+7 (812) 377-13-77</a>
+                        <a href="tel:+78123771377" class="footer__link">
+                            <svg class="footer__phone-icon">
+                                <use xlink:href="img/sprite/sprite.svg#phone"></use>
+                           </svg> +7 (812) 377-13-77
+                        </a>
                     </div>
 
                     <div class="footer__right-side">
                         <ul class="social">
                             <li class="social__link-wrapper">
-                                <a href="#" class="social__link  social__link--vk"></a>
+                                <a href="#" class="social__link">
+                                    <svg class="social__link--vk">
+                                        <use xlink:href="img/sprite/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li class="social__link-wrapper">
-                                <a href="#" class="social__link  social__link--fb"></a>
+                                <a href="#" class="social__link">
+                                    <svg class="social__link--fb">
+                                        <use xlink:href="img/sprite/sprite.svg#fb"></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li class="social__link-wrapper">
-                                <a href="#" class="social__link  social__link--inst"></a>
+                                <a href="#" class="social__link">
+                                    <svg class="social__link--inst">
+                                        <use xlink:href="img/sprite/sprite.svg#inst"></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li class="social__link-wrapper">
-                                <a href="#" class="social__link  social__link--tw"></a>
+                                <a href="#" class="social__link  social__link--tw">
+                                    <svg class="social__link--tw">
+                                        <use xlink:href="img/sprite/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -393,6 +442,8 @@
             </ul>
         </aside>
     </div>
+
+    <script src="js/burger.js"></script>
 
     <script src="js/accordeon.js"></script>
 </body>

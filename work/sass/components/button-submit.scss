@@ -2,16 +2,16 @@
 	text-decoration: none;
     font-family: 'Ubuntu-Medium';
     font-size: 13px;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
-    padding: 10px 15px;
-    background-color: #e45028;
+    padding: rem(10px) rem(15px);
+    background-color: $red;
     border-radius: 5px;
     transition-duration: 0.3s;
     border-style: none;
 }
 
 .button-submit:hover {
-    background-color: #bc9422;
+    background-color: $yellow;
     transition-duration: 0.3s;
 }

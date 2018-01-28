@@ -1,5 +1,5 @@
 .header {
   display: flex;
   flex-direction: row;
-  padding: 10px 10px;
+  padding: rem(10px);
   align-items: center; }

@@ -2,11 +2,18 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    color: #fff;
+    color: $white;
+    
+    @include tablet() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .accordeon__item {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 
 .accordeon__item-title {
@@ -14,7 +21,7 @@
     font-size: 14px;
     font-weight: 300;
     text-decoration: none;
-    color: #fff;
+    color: $white;
     position: relative;
     transition-duration: 0.3s;
     cursor: pointer;
@@ -25,11 +32,16 @@
     display: flex;
     overflow: hidden;
     transition-duration: 0.5s;
+    
+    @include tablet() {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .accordeon_ava-wrapper {
-    height: 100px;
-    width: 100px;
+    height: rem(100px);
+    width: rem(100px);
     border-radius: 50%;
     overflow: hidden;
 }
@@ -40,38 +52,42 @@
 }
 
 .accordeon__item-text {
-    width: 240px;
-    padding: 0 20px;
+    width: rem(240px);
+    padding: 0 rem(20px);
     font-family: 'Ubuntu-Light';
     font-size: 14px;
-    line-height: 24px;
+    line-height: rem(24px);
     h5 {
         font-family: 'Ubuntu-B';
         font-size: 14px;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: rem(10px);
     }
     
     p {
         margin: 0;
+    }
+    
+    @include tablet() {
+        width: rem(340px);
     }
 }
 
 .accordeon__item-title:before {
     content: '';
     position: absolute;
-    top: 5px;
-    left: -20px;
+    top: rem(5px);
+    left: rem(-20px);
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 8px solid #f9b43b;
+    border-top: 8px solid $yellow;
     transition-duration: 0.5s;
 }
 
 .accordeon__item-title:hover {
-    color: #f9b43b;
+    color: $yellow;
     transition-duration: 0.3s;
 }
 
@@ -79,13 +95,17 @@
     .accordeon__item-content {
         height: 100px;
         transition-duration: 0.5s;
+        
+        @include tablet() {
+            height: 190px;
+        }
     }
     .accordeon__item-title {
-        color: #f9b43b;
+        color: $yellow;
     }
     .accordeon__item-title:before {
         border-top: 0px solid transparent;
-        border-bottom: 8px solid #f9b43b;
+        border-bottom: 8px solid $yellow;
         transition-duration: 0.5s;
     }
 }

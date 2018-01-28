@@ -1,30 +1,59 @@
 .footer {
     background-image: url(../img/background/footer-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px 0;
+    @include bg();
+    padding: rem(10px);
+    box-sizing: border-box;
+    
+     @include phone() {
+        padding: 20px 10px;
+    }
 }
 
 .footer__content-wrapper {
     display: flex;
+    @include phone() {
+        flex-wrap: wrap;
+    }
 }
 
 .footer__left-side, .footer__right-side {
     width: 50%;
+    
+    @include phone() {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.footer__left-side {
+    @include phone() {
+        margin-bottom: 15px;
+    }
 }
 
 .footer__text {
     font-family: 'Ubuntu-Light';
     font-weight: 100;
-    font-size: 14px;
-    color: #fff;
-    margin-bottom: 8px;
+    font-size: rem(14px);
+    color: $white;
+    margin-bottom: rem(8px);
 }
 
 .footer__link {
     text-decoration: none;
     font-family: 'Ubuntu-B';
     font-weight: 500;
-    font-size: 14px;
-    color: #e45028;
+    font-size: rem(14px);
+    color: $red;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: rem(20px);
+    vertical-align: top;
+}
+
+.footer__phone-icon {
+    width: rem(11px);
+    height: rem(11px);
+    fill: $red;
 }

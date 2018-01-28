@@ -4,11 +4,11 @@
     justify-content: space-around;
     padding: 0;
     margin: 0;
-    min-width: 518px;
+    min-width: rem(518px);
 }
 
 .nav-panel__item {
-    color: #fff;
+    color: $white;
     border-bottom: 2px solid transparent;
     transition-duration: 1s;
 }
@@ -21,11 +21,17 @@
     text-decoration: none;
     font-family: 'Ubuntu-Medium';
     font-size: 13px;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
 }
 
 .nav-panel__item:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $white;
     transition-duration: 1s;
+}
+
+.nav-panel {
+    @include tablet() {
+        display: none;
+    }
 }

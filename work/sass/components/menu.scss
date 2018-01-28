@@ -1,19 +1,22 @@
 .menu {
     height: 100vh;
-    width: 100wh;
+    min-height: rem(620px);
     background-image: url(../img/background/menu-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+    @include bg();
+    color: $white;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    ;
+    position: relative;
 }
 
 .menu__title {
     font-family: 'Gagalin-Regular';
     font-weight: 300;
-    font-size: 72px;
-    margin-left: 95px;
-    margin-top: 107px;
+    font-size: rem(72px);
+    position: absolute;
+    top: rem(40px);
+    left: rem(20px);
+    z-index: 1;
+    
 }

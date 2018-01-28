@@ -8,21 +8,22 @@
 
 .horizon-accordeon__item {
     display: flex;
+    z-index: 5;
 }
 
 .horizon-accordeon__title-wrapper {
-    width: 80px;
+    width: rem(80px);
     height: 100%;
     position: relative;
     text-decoration: none;
-    color: #fff;
+    color: $white;
 }
 
 .horizon-accordeon__title {
     font-family: 'Gagalin-Regular';
     font-weight: 300;
-    font-size: 40px;
-    line-height: 64px;
+    font-size: rem(40px);
+    line-height: rem(64px);
     margin: 0;
     transform: rotate(-90deg);
     position: absolute;
@@ -37,8 +38,8 @@
 .horizon-accordeon__text {
     font-family: 'Ubuntu-Light';
     font-weight: 100;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
@@ -48,11 +49,11 @@
 
 .horizon-accordeon__item--active {
     .horizon-accordeon__title {
-        color: #f9b43b;
+        color: $yellow;
     }
     .horizon-accordeon__text {
-        width: 540px;
-        padding: 55px 32px;
+        width: rem(540px);
+        padding: rem(55px) rem(32px);
         padding-bottom: 0;
         transition: width 0.3s, padding 0.3s;
     }
@@ -60,25 +61,22 @@
 
 .horizon-accordeon__title-wrapper--meat {
     background-image: url(../img/content/meat-panel-acr.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include bg();
 }
 
 .horizon-accordeon__title-wrapper--veget {
     background-image: url(../img/content/veget-panel-acr.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include bg();
 }
 
 .horizon-accordeon__title-wrapper--diet {
     background-image: url(../img/content/diet-panel-acr.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include bg();
 }
 
 .horizon-accordeon__title-wrapper:hover {
     .horizon-accordeon__title {
-        color: #f9b43b;
+        color: $yellow;
         transition-duration: 0.3s;
     }
 }

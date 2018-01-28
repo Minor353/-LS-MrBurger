@@ -1,13 +1,21 @@
+/*Вспомогательное*/
+
+@import "util/normalize.scss";
+
+@import "util/sass-content.scss";
+
+
+
 /*Шрифты*/
 @import "general/typography.scss";
 
 @import "general/container.scss";
 
-/*Вспомогательное*/
+/*Общие*/
 
-@import "util/normalize.scss";
+@import "general/html.scss";
 
-@import "util/variable.scss";
+
 
 
 /*Компоненты*/
@@ -21,6 +29,8 @@
 @import "components/logo.scss";
 
 @import "components/nav-panel.scss";
+
+@import "components/burger.scss";
 
 @import "components/button-submit.scss";
 
