@@ -5,11 +5,8 @@
 
 .reviews__comment {
     opacity: 0;
-    height: 50%;
-    position: absolute;
+    height: 100%;
     box-sizing: border-box;
-    top: 0;
-    left: 0;
     color: $white;
     padding: rem(50px) rem(20px);
     transition-duration: 0.7s;
@@ -71,7 +68,6 @@
     list-style-type: none;
     width: 25%;
     height: 50vh;
-    position: relative;
     
     @include tablet() {
         width: 50%;
@@ -80,45 +76,13 @@
 }
 
 .reviews__item-img {
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     transition-duration: 0.8s;
 }
 
-.reviews__item-ava1 {
-    background-image: url(../img/content/photo1.png);
-}
 
-.reviews__item-ava2 {
-    background-image: url(../img/content/photo2.png);
-}
-
-.reviews__item-ava3 {
-    background-image: url(../img/content/photo3.png);
-}
-
-.reviews__item-ava4 {
-    background-image: url(../img/content/photo4.png);
-}
-
-.reviews__item-ava5 {
-    background-image: url(../img/content/photo5.png);
-}
-
-.reviews__item-ava6 {
-    background-image: url(../img/content/photo6.png);
-}
-
-.reviews__item-ava7 {
-    background-image: url(../img/content/photo7.png);
-}
-
-.reviews__item-ava8 {
-    background-image: url(../img/content/photo8.png);
-}
 
 .reviews__item:hover .reviews__comment {
     opacity: 1;

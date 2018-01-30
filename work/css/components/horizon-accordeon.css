@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 19 of C:\repozytory\-LS-MrBurger\work\sass\components\horizon-accordeon.scss
+        on line 20 of C:\repozytory\-LS-MrBurger\work\sass\components\horizon-accordeon.scss
 
-14: .horizon-accordeon__title-wrapper {
-15:     width: rem(80px);
-16:     height: 100%;
-17:     position: relative;
-18:     text-decoration: none;
-19:     color: $white;
-20: }
-21: 
-22: .horizon-accordeon__title {
-23:     font-family: 'Gagalin-Regular';
-24:     font-weight: 300;
+15: .horizon-accordeon__title-wrapper {
+16:     width: rem(80px);
+17:     height: 100%;
+18:     position: relative;
+19:     text-decoration: none;
+20:     color: $white;
+21: }
+22: 
+23: .horizon-accordeon__title {
+24:     font-family: 'Gagalin-Regular';
+25:     font-weight: 300;
 
 Backtrace:
-C:\repozytory\-LS-MrBurger\work\sass\components\horizon-accordeon.scss:19
+C:\repozytory\-LS-MrBurger\work\sass\components\horizon-accordeon.scss:20
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -61,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 19 of C:\repozytory\-LS-MrBurger\work\sass\components\horizon-accordeon.scss\A \A 14: .horizon-accordeon__title-wrapper {\A 15:     width: rem(80px);\A 16:     height: 100%;\A 17:     position: relative;\A 18:     text-decoration: none;\A 19:     color: $white;\A 20: }\A 21: \A 22: .horizon-accordeon__title {\A 23:     font-family: 'Gagalin-Regular';\A 24:     font-weight: 300;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 20 of C:\repozytory\-LS-MrBurger\work\sass\components\horizon-accordeon.scss\A \A 15: .horizon-accordeon__title-wrapper {\A 16:     width: rem(80px);\A 17:     height: 100%;\A 18:     position: relative;\A 19:     text-decoration: none;\A 20:     color: $white;\A 21: }\A 22: \A 23: .horizon-accordeon__title {\A 24:     font-family: 'Gagalin-Regular';\A 25:     font-weight: 300;"; }
