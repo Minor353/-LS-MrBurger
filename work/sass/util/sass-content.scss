@@ -17,6 +17,8 @@ $tablet: 768px;
 
 $phone: 480px;
 
+$min: 360px;
+
 
 /*Миксины*/
 
@@ -34,6 +36,12 @@ $phone: 480px;
 
 @mixin phone {
     @media screen and (max-width:$phone) {
+        @content;
+    }
+}
+
+@mixin min {
+    @media screen and (max-width:$min) {
         @content;
     }
 }
