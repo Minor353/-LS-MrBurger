@@ -63,7 +63,6 @@
     .horizon-accordeon__text {
         width: rem(540px);
         padding: rem(55px) rem(32px);
-        padding-bottom: 0;
         transition: width 0.3s, padding 0.3s;
         
         @include tablet() {

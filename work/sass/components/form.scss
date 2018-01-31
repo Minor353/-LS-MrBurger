@@ -28,6 +28,9 @@
     display: flex;
 }
 
+.form__section:last-child {
+    margin-bottom: 0;
+}
 
 
 .form__title {
@@ -44,6 +47,7 @@
     display: block;
     flex: 1;
     margin-right: 20px;
+    cursor: pointer;
     
     &:last-child {
         margin-right: 0;

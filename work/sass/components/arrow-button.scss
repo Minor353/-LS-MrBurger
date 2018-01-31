@@ -3,6 +3,7 @@
     height: 40px; 
     margin: 0 auto;
     margin-bottom: 28px;
+    cursor: pointer;
     
     @include phone() {
         margin-bottom: 20px;

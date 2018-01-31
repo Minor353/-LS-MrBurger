@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phone'.
-        on line 7 of C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss, in `phone'
-        from line 7 of C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss
+        on line 8 of C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss, in `phone'
+        from line 8 of C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss
 
-2:     width: 40px;
 3:     height: 40px; 
 4:     margin: 0 auto;
 5:     margin-bottom: 28px;
-6:     
-7:     @include phone() {
-8:         margin-bottom: 20px;
-9:     }
-10: }
-11: 
-12: .arrow-button__first {
+6:     cursor: pointer;
+7:     
+8:     @include phone() {
+9:         margin-bottom: 20px;
+10:     }
+11: }
+12: 
+13: .arrow-button__first {
 
 Backtrace:
-C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss:7:in `phone'
-C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss:7
+C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss:8:in `phone'
+C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss:8
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phone'.\A         on line 7 of C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss, in `phone'\A         from line 7 of C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss\A \A 2:     width: 40px;\A 3:     height: 40px; \A 4:     margin: 0 auto;\A 5:     margin-bottom: 28px;\A 6:     \A 7:     @include phone() {\A 8:         margin-bottom: 20px;\A 9:     }\A 10: }\A 11: \A 12: .arrow-button__first {"; }
+  content: "Error: Undefined mixin 'phone'.\A         on line 8 of C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss, in `phone'\A         from line 8 of C:\repozytory\-LS-MrBurger\work\sass\components\arrow-button.scss\A \A 3:     height: 40px; \A 4:     margin: 0 auto;\A 5:     margin-bottom: 28px;\A 6:     cursor: pointer;\A 7:     \A 8:     @include phone() {\A 9:         margin-bottom: 20px;\A 10:     }\A 11: }\A 12: \A 13: .arrow-button__first {"; }
