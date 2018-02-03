@@ -1,0 +1,159 @@
+.slider {
+    margin: auto;
+    display: flex;
+    position: relative;
+    @include tablet() {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+.slider__arrow {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-left: 3px solid $white;
+    border-top: 3px solid $white;
+    border-radius: 3px;
+}
+
+.slider__arrow-left {
+    left: -40px;
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.slider__arrow-right {
+    right: -40px;
+    top: 50%;
+    transform: rotate(135deg);
+}
+
+.slider__wrapper {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.slider__img {
+    width: 460px;
+    height: 430px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    @include tablet() {
+        background-position: bottom;
+        height: 370px;
+    }
+    @include phone() {
+        width: 326px;
+        height: 257px;
+    }
+}
+
+.slider__content {}
+
+.slider__item {
+    display: flex;
+    align-items: center;
+    @include tablet() {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.slider__img-calories {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 80px;
+    background-image: url(../img/icons/kkal.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    box-sizing: border-box;
+    padding-top: 28px;
+    opacity: 0.5;
+    @include tablet() {
+        top: 0;
+        left: 390px;
+    }
+    @include phone() {
+        left: 225px;
+    }
+}
+
+.slider__calories-item {
+    font-family: 'Gagalin-Regular';
+    font-weight: 300;
+    font-size: rem(14px);
+    color: $white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.slider__calories-item:first-child {
+    margin-top: 0;
+}
+
+.slider__calories-item--font-size {
+    font-size: rem(20px);
+}
+
+////////////////////////////////////////////////////
+.slider__content {
+    height: 430px;
+    width: 460px;
+    cursor: default;
+    @include tablet() {
+        width: 520px;
+        height: 330px;
+    }
+    @include phone() {
+        width: 310px;
+    }
+}
+
+.slider__title {
+    font-family: 'Gagalin-Regular';
+    font-weight: 300;
+    font-size: rem(71.92px);
+    line-height: rem(64px);
+    color: $white;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    @include phone() {
+        font-size: rem(50px);
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.slider__content-text {
+    font-family: 'Ubuntu-Light';
+    font-weight: 100;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: $white;
+    margin-bottom: 20px;
+    
+    @include phone() {
+        margin-bottom: 0;
+    }
+}
+
+.slider__price {
+    font-family: 'Gagalin-Regular';
+    font-weight: 300;
+    font-size: rem(30px);
+    color: $red;
+}
+
+.slider__price-number {
+    font-size: rem(72px);
+}
+
+/////////////////////////////////////////////////////
