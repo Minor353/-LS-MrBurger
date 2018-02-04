@@ -2,6 +2,12 @@
 	width: rem(98px);
     height: rem(74px);
     margin-right: auto;
+    
+    @include tablet() {
+        position: relative;
+        z-index: 1001;
+    }
+    
     img {
         width: 100%;
         height: 100%;

@@ -5,24 +5,59 @@
     padding: 0;
     margin: 0;
     min-width: rem(518px);
+    
+    @include tablet() {
+        flex-direction: column;
+        height: 50%;
+        align-items: center;
+    }
 }
 
 .nav-panel__item {
     color: $white;
     border-bottom: 2px solid transparent;
     transition-duration: 1s;
+    list-style-type: none;
+    position: relative;
+    
+    @include tablet() {
+        width: 150px;
+        text-align: center;
+    }
+    &:after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        background-color: $white;
+        border-radius: 50%;
+        position: absolute;
+        top: 7px;
+        right: -18px;
+        
+        @include tablet() {
+            top: 40px;
+            right: 72px;
+        }
+    }
 }
 
-.nav-panel__item:first-child {
-    list-style-type: none;
+.nav-panel__item--decor-none:after {
+    display: none;
 }
 
 .nav-panel__item-link {
     text-decoration: none;
     font-family: 'Ubuntu-Medium';
+    font-weight: 400;
     font-size: 13px;
     color: $white;
     text-transform: uppercase;
+    
+    @include tablet() {
+        font-family: 'Ubuntu-Regular';
+        font-weight: 300;
+        font-size: rem(24px);
+    }
 }
 
 .nav-panel__item:hover {
@@ -32,6 +67,20 @@
 
 .nav-panel {
     @include tablet() {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($grey, 0.9);
         display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        box-sizing: border-box;
     }
+}
+
+.nav-panel-active {
+    display: flex;
 }
