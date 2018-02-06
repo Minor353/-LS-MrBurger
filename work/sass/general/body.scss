@@ -1,3 +1,5 @@
-.body-modal-open {
-    overflow: hidden;
+@include tablet() {
+    .body-modal-open {
+        overflow: hidden;
+    }
 }

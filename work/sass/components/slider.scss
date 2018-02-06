@@ -15,6 +15,7 @@
     border-left: 3px solid $white;
     border-top: 3px solid $white;
     border-radius: 3px;
+    transition-duration: .3s;
 }
 
 .slider__arrow-left {
@@ -27,6 +28,11 @@
     right: -40px;
     top: 50%;
     transform: rotate(135deg);
+}
+
+.slider__arrow:hover {
+    border-color: $red;
+    transition-duration: .3s;
 }
 
 .slider__wrapper {
@@ -77,10 +83,8 @@
     opacity: 0.5;
     @include tablet() {
         top: 0;
-        left: 390px;
-    }
-    @include phone() {
-        left: 225px;
+        right: 0;
+        left: auto;
     }
 }
 
@@ -97,7 +101,7 @@
     margin-top: 0;
 }
 
-.slider__calories-item--font-size {
+.slider__calories-item--size {
     font-size: rem(20px);
 }
 
