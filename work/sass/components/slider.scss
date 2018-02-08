@@ -39,6 +39,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
 }
 
 .slider__img {
@@ -58,16 +59,28 @@
     }
 }
 
-.slider__content {}
 
 .slider__item {
-    display: flex;
+     display: none;
+//    display: flex;
+//    width: 0;        Анимация появления. Но она меня раздражает.
+//    opacity: 0;
+//    overflow: hidden;
     align-items: center;
     @include tablet() {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
+
+.slider__item-active {
+      display: flex;
+//    overflow: visible;
+//    width: 100%;             Анимация появления. Но она меня раздражает.
+//    opacity: 1;
+//    transition: opacity 0.5s 0.1s;
+}
+
 
 .slider__img-calories {
     position: absolute;
@@ -110,6 +123,9 @@
     height: 430px;
     width: 460px;
     cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     @include tablet() {
         width: 520px;
         height: 330px;
@@ -128,7 +144,7 @@
     margin: 0;
     margin-top: 30px;
     margin-bottom: 30px;
-    
+
     @include phone() {
         font-size: rem(50px);
         margin-top: 5px;
@@ -143,7 +159,7 @@
     line-height: rem(24px);
     color: $white;
     margin-bottom: 20px;
-    
+
     @include phone() {
         margin-bottom: 0;
     }
