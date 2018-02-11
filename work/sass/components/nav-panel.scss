@@ -84,3 +84,21 @@
 .nav-panel-active {
     display: flex;
 }
+
+
+.nav-animate{
+    animation-duration: 0.55s;  /* Время работы анимации */
+    animation-fill-mode: both;  /* Поведение анимации */
+    animation-name: navInDown; /* Имя анимации */
+}
+ 
+@keyframes navInDown { /* Сама анимация */
+    0% {                /* Старт анимации */
+        opacity: 0;
+        transform: translate3d(0px, -100%, 0px);
+    }
+    100% {              /* в финале анимации - финал это заданная 0.55s */
+        opacity: 1;
+        transform: none;
+    }
+}

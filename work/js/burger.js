@@ -1,10 +1,8 @@
-const openButton = document.querySelector(".burger");
-
-const navPanel = document.querySelector(".nav-panel");
-
-const menuLink = document.querySelectorAll(".nav-panel__item");
-
-const bodyModal = document.body;
+const openButton = document.querySelector(".burger"),
+      navPanel = document.querySelector(".nav-panel"),
+      menuLink = document.querySelectorAll(".nav-panel__item"),
+      menuWrapp = document.querySelector(".nav-panel__items-wrapper"),
+      bodyModal = document.body;
 
 
 
@@ -15,6 +13,7 @@ const mobileMenu = function() {
     openButton.classList.toggle("burger-active");
     navPanel.classList.toggle("nav-panel-active");
     bodyModal.classList.toggle("body-modal-open");
+    menuWrapp.classList.toggle("nav-animate");  
 });
 
 for (let i = 0; i < menuLink.length; i++) {
