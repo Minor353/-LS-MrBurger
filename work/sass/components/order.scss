@@ -1,9 +1,12 @@
 .order {
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     min-height: rem(620px);
     background-image: url(../img/background/order-bg.png);
     @include bg();
     display: flex;
+    
+    
 } 
 
 .order__wrapper {

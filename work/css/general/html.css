@@ -1,21 +1,22 @@
 /*
 Error: Undefined mixin 'tablet'.
-        on line 4 of C:\repozytory\-LS-MrBurger\work\sass\general\html.scss, in `tablet'
-        from line 4 of C:\repozytory\-LS-MrBurger\work\sass\general\html.scss
+        on line 5 of C:\repozytory\-LS-MrBurger\work\sass\general\html.scss, in `tablet'
+        from line 5 of C:\repozytory\-LS-MrBurger\work\sass\general\html.scss
 
 1: html {
 2:     font-size: 16px;
-3:     
-4:     @include tablet() {
-5:         font-size: 15px; 
-6:     }
-7:     
-8:     @include phone() {
-9:         font-size: 13px; 
+3:     height: 100%;
+4:     
+5:     @include tablet() {
+6:         font-size: 15px; 
+7:     }
+8:     
+9:     @include phone() {
+10:         font-size: 13px; 
 
 Backtrace:
-C:\repozytory\-LS-MrBurger\work\sass\general\html.scss:4:in `tablet'
-C:\repozytory\-LS-MrBurger\work\sass\general\html.scss:4
+C:\repozytory\-LS-MrBurger\work\sass\general\html.scss:5:in `tablet'
+C:\repozytory\-LS-MrBurger\work\sass\general\html.scss:5
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -63,4 +64,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablet'.\A         on line 4 of C:\repozytory\-LS-MrBurger\work\sass\general\html.scss, in `tablet'\A         from line 4 of C:\repozytory\-LS-MrBurger\work\sass\general\html.scss\A \A 1: html {\A 2:     font-size: 16px;\A 3:     \A 4:     @include tablet() {\A 5:         font-size: 15px; \A 6:     }\A 7:     \A 8:     @include phone() {\A 9:         font-size: 13px; "; }
+  content: "Error: Undefined mixin 'tablet'.\A         on line 5 of C:\repozytory\-LS-MrBurger\work\sass\general\html.scss, in `tablet'\A         from line 5 of C:\repozytory\-LS-MrBurger\work\sass\general\html.scss\A \A 1: html {\A 2:     font-size: 16px;\A 3:     height: 100%;\A 4:     \A 5:     @include tablet() {\A 6:         font-size: 15px; \A 7:     }\A 8:     \A 9:     @include phone() {\A 10:         font-size: 13px; "; }

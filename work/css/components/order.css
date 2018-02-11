@@ -1,22 +1,23 @@
 /*
 Error: Undefined mixin 'bg'.
-        on line 5 of C:\repozytory\-LS-MrBurger\work\sass\components\order.scss, in `bg'
-        from line 5 of C:\repozytory\-LS-MrBurger\work\sass\components\order.scss
+        on line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\order.scss, in `bg'
+        from line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\order.scss
 
 1: .order {
-2:     height: 100%;
-3:     min-height: rem(620px);
-4:     background-image: url(../img/background/order-bg.png);
-5:     @include bg();
-6:     display: flex;
-7: } 
-8: 
-9: .order__wrapper {
-10:     margin: auto;
+2:     height: 100vh;
+3:     width: 100vw;
+4:     min-height: rem(620px);
+5:     background-image: url(../img/background/order-bg.png);
+6:     @include bg();
+7:     display: flex;
+8:     
+9:     
+10: } 
+11: 
 
 Backtrace:
-C:\repozytory\-LS-MrBurger\work\sass\components\order.scss:5:in `bg'
-C:\repozytory\-LS-MrBurger\work\sass\components\order.scss:5
+C:\repozytory\-LS-MrBurger\work\sass\components\order.scss:6:in `bg'
+C:\repozytory\-LS-MrBurger\work\sass\components\order.scss:6
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -64,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'bg'.\A         on line 5 of C:\repozytory\-LS-MrBurger\work\sass\components\order.scss, in `bg'\A         from line 5 of C:\repozytory\-LS-MrBurger\work\sass\components\order.scss\A \A 1: .order {\A 2:     height: 100%;\A 3:     min-height: rem(620px);\A 4:     background-image: url(../img/background/order-bg.png);\A 5:     @include bg();\A 6:     display: flex;\A 7: } \A 8: \A 9: .order__wrapper {\A 10:     margin: auto;"; }
+  content: "Error: Undefined mixin 'bg'.\A         on line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\order.scss, in `bg'\A         from line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\order.scss\A \A 1: .order {\A 2:     height: 100vh;\A 3:     width: 100vw;\A 4:     min-height: rem(620px);\A 5:     background-image: url(../img/background/order-bg.png);\A 6:     @include bg();\A 7:     display: flex;\A 8:     \A 9:     \A 10: } \A 11: "; }

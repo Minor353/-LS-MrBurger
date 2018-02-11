@@ -1,5 +1,6 @@
 .product {
   overflow: hidden;
   height: 100vh;
+  width: 100vw;
   background: linear-gradient(#f9b43b, #eb8e38, #f9b43b);
   display: flex; }

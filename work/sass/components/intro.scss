@@ -1,11 +1,13 @@
 .intro {
     height: 100vh;
+    width: 100vw;
     min-height: rem(620px);
     background-image: url(../img/background/intro-bg.png);
     @include bg();
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .intro__content {

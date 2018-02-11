@@ -1,8 +1,11 @@
 .map {
 	height: 100vh;
+    width: 100vw;
     min-height: rem(620px);
     display: flex;
     flex-direction: column;
+    
+    
 }
 
 .map__section {

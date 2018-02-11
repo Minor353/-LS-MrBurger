@@ -1,18 +1,22 @@
 /*
 Error: Undefined mixin 'tablet'.
-        on line 1 of C:\repozytory\-LS-MrBurger\work\sass\general\body.scss, in `tablet'
-        from line 1 of C:\repozytory\-LS-MrBurger\work\sass\general\body.scss
+        on line 5 of C:\repozytory\-LS-MrBurger\work\sass\general\body.scss, in `tablet'
+        from line 5 of C:\repozytory\-LS-MrBurger\work\sass\general\body.scss
 
-1: @include tablet() {
-2:     .body-modal-open {
-3:         overflow: hidden;
-4:     }
-5: }
-6: 
+1: body {
+2:     height: 100%;    
+3: }
+4: 
+5: @include tablet() {
+6:     .body-modal-open {
+7:         overflow: hidden;
+8:     }
+9: }
+10: 
 
 Backtrace:
-C:\repozytory\-LS-MrBurger\work\sass\general\body.scss:1:in `tablet'
-C:\repozytory\-LS-MrBurger\work\sass\general\body.scss:1
+C:\repozytory\-LS-MrBurger\work\sass\general\body.scss:5:in `tablet'
+C:\repozytory\-LS-MrBurger\work\sass\general\body.scss:5
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -49,4 +53,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablet'.\A         on line 1 of C:\repozytory\-LS-MrBurger\work\sass\general\body.scss, in `tablet'\A         from line 1 of C:\repozytory\-LS-MrBurger\work\sass\general\body.scss\A \A 1: @include tablet() {\A 2:     .body-modal-open {\A 3:         overflow: hidden;\A 4:     }\A 5: }\A 6: "; }
+  content: "Error: Undefined mixin 'tablet'.\A         on line 5 of C:\repozytory\-LS-MrBurger\work\sass\general\body.scss, in `tablet'\A         from line 5 of C:\repozytory\-LS-MrBurger\work\sass\general\body.scss\A \A 1: body {\A 2:     height: 100%;    \A 3: }\A 4: \A 5: @include tablet() {\A 6:     .body-modal-open {\A 7:         overflow: hidden;\A 8:     }\A 9: }\A 10: "; }

@@ -1,22 +1,23 @@
 /*
 Error: Undefined mixin 'bg'.
-        on line 5 of C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss, in `bg'
-        from line 5 of C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss
+        on line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss, in `bg'
+        from line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss
 
 1: .menu {
 2:     height: 100vh;
-3:     min-height: rem(620px);
-4:     background-image: url(../img/background/menu-bg.png);
-5:     @include bg();
-6:     color: $white;
-7:     display: flex;
-8:     justify-content: flex-end;
-9:     ;
+3:     width: 100vw;
+4:     min-height: rem(620px);
+5:     background-image: url(../img/background/menu-bg.png);
+6:     @include bg();
+7:     color: $white;
+8:     display: flex;
+9:     justify-content: flex-end;
 10:     position: relative;
+11:     
 
 Backtrace:
-C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss:5:in `bg'
-C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss:5
+C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss:6:in `bg'
+C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss:6
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -64,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'bg'.\A         on line 5 of C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss, in `bg'\A         from line 5 of C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss\A \A 1: .menu {\A 2:     height: 100vh;\A 3:     min-height: rem(620px);\A 4:     background-image: url(../img/background/menu-bg.png);\A 5:     @include bg();\A 6:     color: $white;\A 7:     display: flex;\A 8:     justify-content: flex-end;\A 9:     ;\A 10:     position: relative;"; }
+  content: "Error: Undefined mixin 'bg'.\A         on line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss, in `bg'\A         from line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\menu.scss\A \A 1: .menu {\A 2:     height: 100vh;\A 3:     width: 100vw;\A 4:     min-height: rem(620px);\A 5:     background-image: url(../img/background/menu-bg.png);\A 6:     @include bg();\A 7:     color: $white;\A 8:     display: flex;\A 9:     justify-content: flex-end;\A 10:     position: relative;\A 11:     "; }
