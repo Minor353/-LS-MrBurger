@@ -1,0 +1,113 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($grey, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.popup-active {
+    display: flex;
+}
+
+.popup__wrapper {
+    width: 30%;
+    background-color: $white;
+    padding: 20px 18px;
+    border-radius: 5px;
+    position: relative;
+    
+    @include tablet() {
+        width: 60%;
+    }
+}
+
+.popup__name {
+    font-family: 'Gagalin-Regular';
+    font-weight: 100;
+    font-size: rem(14px);
+    line-height: rem(28px);
+    margin-top: 0;
+}
+
+.popup__text {
+    font-family: 'Ubuntu-Light';
+    font-weight: 100;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    margin-bottom: 0;
+}
+
+.popup__close {
+    width: 24px;
+    height: 4px;
+    background-color: transparent;
+    margin: 0 15px;
+    border-radius: 4px;
+    position: absolute;
+    right: 5px;
+    top: 26px;
+}
+
+.popup__close:before {
+     content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 4px;
+    background-color: $red;
+    border-radius: 4px;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+.popup__close:after {
+     content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 4px;
+    background-color: $red;
+    border-radius: 4px;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.popup__close:hover {
+    &:before {
+        background-color: $yellow;
+        transition: 0.3s;
+    }
+    &:after {
+        background-color: $yellow;
+        transition: 0.3s;
+    }
+}
+
+
+.popup-animate{
+    animation-duration: 0.55s;  /* Время работы анимации */
+    animation-fill-mode: both;  /* Поведение анимации */
+    animation-name: fadeInDown; /* Имя анимации */
+}
+ 
+@keyframes fadeInDown { /* Сама анимация */
+    0% {                /* Старт анимации */
+        opacity: 0;
+        transform: translate3d(0px, -100%, 0px);
+    }
+    100% {              /* в финале анимации - финал это заданная 0.55s */
+        opacity: 1;
+        transform: none;
+    }
+}

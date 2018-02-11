@@ -6,7 +6,9 @@ const arrowRight = document.querySelector('.slider__arrow-right');
 
 var currentSlide = 0;
 
-arrowRight.addEventListener('click', function(e){
+const menuSlider = function() {
+    
+    arrowRight.addEventListener('click', function(e){
     e.preventDefault();
     
     if (currentSlide == slides.length - 1) {
@@ -42,6 +44,8 @@ arrowLeft.addEventListener('click', function(e){
                 }
 };
 });
+    
+};
 
 
-
+menuSlider();

@@ -46,7 +46,7 @@
     width: 460px;
     height: 430px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 95%;
     background-position: center;
     position: relative;
     @include tablet() {
@@ -61,11 +61,11 @@
 
 
 .slider__item {
-     display: none;
-//    display: flex;
-//    width: 0;        Анимация появления. Но она меня раздражает.
-//    opacity: 0;
-//    overflow: hidden;
+     //display: none;
+    display: flex;
+    width: 0;        
+    opacity: 0;
+    overflow: hidden;
     align-items: center;
     @include tablet() {
         flex-wrap: wrap;
@@ -74,11 +74,11 @@
 }
 
 .slider__item-active {
-      display: flex;
-//    overflow: visible;
-//    width: 100%;             Анимация появления. Но она меня раздражает.
-//    opacity: 1;
-//    transition: opacity 0.5s 0.1s;
+      //display: flex;
+    overflow: visible;
+    width: 100%;             //Анимация появления. Но она меня раздражает.
+    opacity: 1;
+    transition: opacity 0.9s 0.1s;
 }
 
 
