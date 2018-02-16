@@ -147,6 +147,10 @@
 
 .form__imput--textarea {
     height: rem(120px);
+    @include phone() {
+        height: 4.5rem;
+    }
+    
 }
 
 .form__block--margin {

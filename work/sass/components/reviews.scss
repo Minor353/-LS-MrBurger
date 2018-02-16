@@ -1,5 +1,5 @@
 .reviews {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     min-height: rem(620px);
     
@@ -25,6 +25,8 @@
     
     @include phone() {
         top: 8px;
+        padding: 0;
+        padding-top: rem(15px);
     }
 }
 
@@ -63,6 +65,7 @@
 .reviews__items-wrapper {
     padding: 0;
     margin: 0;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -70,11 +73,11 @@
 .reviews__item {
     list-style-type: none;
     width: 25%;
-    height: 50vh;
+    height: 50%;
     
     @include tablet() {
         width: 50%;
-        height: 25vh;
+        height: 25%;
     }
 }
 

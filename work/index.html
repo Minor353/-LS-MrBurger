@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mr.Burger</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="jquery.pagepiling.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -32,7 +31,7 @@
                         </ul>
                     </nav>
 
-                    <a href="#" class="button-submit">Заказать</a>
+                    <a href="#7" class="button-submit">Заказать</a>
 
                     <a href="#">
                         <div class="burger">
@@ -53,7 +52,7 @@
                     </h1>
                 </div>
 
-                <a href="#1" class="arrow-button">
+                <a href="#2" class="arrow-button">
                     <div class="arrow-button__first"></div>
                     <div class="arrow-button__second"></div>
                 </a>
@@ -186,7 +185,7 @@
                                     <div>
                                         <span class="slider__price-number">500</span><span>рублей</span>
                                     </div>
-                                    <a href="#" class="button-submit">Заказать</a>
+                                    <a href="#7" class="button-submit">Заказать</a>
                                 </div>
                             </div>
                         </li>
@@ -264,7 +263,7 @@
                                     <div>
                                         <span class="slider__price-number">800</span><span>рублей</span>
                                     </div>
-                                    <a href="#" class="button-submit">Заказать</a>
+                                    <a href="#7" class="button-submit">Заказать</a>
                                 </div>
                             </div>
                         </li>
@@ -342,7 +341,7 @@
                                     <div>
                                         <span class="slider__price-number">450</span><span>рублей</span>
                                     </div>
-                                    <a href="#" class="button-submit">Заказать</a>
+                                    <a href="#7" class="button-submit">Заказать</a>
                                 </div>
                             </div>
                         </li>
@@ -420,7 +419,7 @@
                                     <div>
                                         <span class="slider__price-number">740</span><span>рублей</span>
                                     </div>
-                                    <a href="#" class="button-submit">Заказать</a>
+                                    <a href="#7" class="button-submit">Заказать</a>
                                 </div>
                             </div>
                         </li>
@@ -498,7 +497,7 @@
                                     <div>
                                         <span class="slider__price-number">545</span><span>рублей</span>
                                     </div>
-                                    <a href="#" class="button-submit">Заказать</a>
+                                    <a href="#7" class="button-submit">Заказать</a>
                                 </div>
                             </div>
                         </li>
@@ -910,7 +909,9 @@
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 12,
                 center: center,
-                disableDefaultUI: true
+                disableDefaultUI: true,
+                scrollwheel: false,
+                draggable: false
             });
             var image = 'img/icons/map-marker.svg';
             var marker = new google.maps.Marker({

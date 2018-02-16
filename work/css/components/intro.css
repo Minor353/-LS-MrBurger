@@ -4,7 +4,7 @@ Error: Undefined mixin 'bg'.
         from line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\intro.scss
 
 1: .intro {
-2:     height: 100vh;
+2:     height: 100%;
 3:     width: 100vw;
 4:     min-height: rem(620px);
 5:     background-image: url(../img/background/intro-bg.png);
@@ -65,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'bg'.\A         on line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\intro.scss, in `bg'\A         from line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\intro.scss\A \A 1: .intro {\A 2:     height: 100vh;\A 3:     width: 100vw;\A 4:     min-height: rem(620px);\A 5:     background-image: url(../img/background/intro-bg.png);\A 6:     @include bg();\A 7:     display: flex;\A 8:     flex-direction: column;\A 9:     justify-content: space-between;\A 10:     \A 11: }"; }
+  content: "Error: Undefined mixin 'bg'.\A         on line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\intro.scss, in `bg'\A         from line 6 of C:\repozytory\-LS-MrBurger\work\sass\components\intro.scss\A \A 1: .intro {\A 2:     height: 100%;\A 3:     width: 100vw;\A 4:     min-height: rem(620px);\A 5:     background-image: url(../img/background/intro-bg.png);\A 6:     @include bg();\A 7:     display: flex;\A 8:     flex-direction: column;\A 9:     justify-content: space-between;\A 10:     \A 11: }"; }

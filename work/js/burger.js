@@ -1,14 +1,12 @@
-const openButton = document.querySelector(".burger"),
+
+const mobileMenu = function() {
+    
+    const openButton = document.querySelector(".burger"),
       navPanel = document.querySelector(".nav-panel"),
       menuLink = document.querySelectorAll(".nav-panel__item"),
       menuWrapp = document.querySelector(".nav-panel__items-wrapper"),
       bodyModal = document.body;
-
-
-
-
-
-const mobileMenu = function() {
+    
     openButton.addEventListener('click', function(){
     openButton.classList.toggle("burger-active");
     navPanel.classList.toggle("nav-panel-active");

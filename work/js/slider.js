@@ -1,12 +1,12 @@
-const slides = document.querySelectorAll('.slider__item');
 
-const arrowLeft = document.querySelector('.slider__arrow-left');
-
-const arrowRight = document.querySelector('.slider__arrow-right');
-
-var currentSlide = 0;
 
 const menuSlider = function() {
+    
+    const slides = document.querySelectorAll('.slider__item'),
+          arrowLeft = document.querySelector('.slider__arrow-left'),
+          arrowRight = document.querySelector('.slider__arrow-right');
+
+    var currentSlide = 0;
     
     arrowRight.addEventListener('click', function(e){
     e.preventDefault();

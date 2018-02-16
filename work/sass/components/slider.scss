@@ -132,6 +132,11 @@
     }
     @include phone() {
         width: 310px;
+        height: 214px;
+        
+        .slider__content-text {
+            display: none;
+        }
     }
 }
 

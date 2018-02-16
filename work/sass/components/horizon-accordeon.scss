@@ -49,6 +49,7 @@
     box-sizing: border-box;
     overflow: hidden;
     width: 0;
+    height: 0;
     transition: width 0.3s, padding 0.3s;
     
     @include tablet() {
@@ -61,14 +62,30 @@
         color: $yellow;
     }
     .horizon-accordeon__text {
-        width: rem(540px);
+        width: 540px;
+        height: 100vh;
         padding: rem(55px) rem(32px);
         transition: width 0.3s, padding 0.3s;
         
         @include tablet() {
-            width: 100%;
+            width: 77%;
             transition: width 0.1s;
         }
+        
+        @include phone() {
+            width: 100%;
+            background-color: rgba(60, 64, 66, .9);
+            
+        }
+    }
+    
+    @include phone() {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 25;
     }
 }
 

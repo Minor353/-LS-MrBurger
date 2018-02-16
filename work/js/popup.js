@@ -1,3 +1,7 @@
+
+
+const popupToogle = function () {
+    
 const btnInfo = document.querySelectorAll('.button-info'),
       btnClose = document.querySelector('.popup__close'),
       popup = document.querySelector('.popup'),
@@ -6,16 +10,9 @@ const btnInfo = document.querySelectorAll('.button-info'),
       revTitle = document.querySelectorAll('.reviews__comment-title'),
       revText = document.querySelectorAll('.reviews__comment-text');
 
-
 var popupName = document.querySelector('.popup__name'),
     popupContent = document.querySelector('.popup__text');
-
-
-
-
-
-
-const popupToogle = function () {
+    
     for (let i = 0; i < btnInfo.length; i++) {
         btnInfo[i].addEventListener('click', function (e) {
             e.preventDefault();

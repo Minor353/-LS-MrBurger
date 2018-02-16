@@ -1,9 +1,10 @@
-var itemV = document.getElementsByClassName('accordeon__item');
-var itemH = document.getElementsByClassName('horizon-accordeon__item');
+
+
 
                           
 
 var verticalAccordeon = function () {
+    let itemV = document.getElementsByClassName('accordeon__item');
 
     for (let i = 0; i < itemV.length; i++) {
         itemV[i].addEventListener('click', function (el) {
@@ -21,6 +22,8 @@ var verticalAccordeon = function () {
 
 
 var horizonAccordeon = function () {
+    let itemH = document.getElementsByClassName('horizon-accordeon__item');
+    
     for (let i = 0; i < itemH.length; i++) {
         itemH[i].addEventListener('click', function (el) {
 
