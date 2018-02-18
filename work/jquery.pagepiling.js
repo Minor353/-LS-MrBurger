@@ -30,7 +30,7 @@
             verticalCentered: true,
             sectionsColor: [],
             anchors: [],
-            scrollingSpeed: 700,
+            scrollingSpeed: 100,
             easing: 'easeInQuart',
             loopBottom: false,
             loopTop: false,

@@ -682,42 +682,42 @@
                 <div class="order__wrapper  container">
                     <h2 class="order__title">Закажите доставку</h2>
 
-                    <form action="#" class="form">
+                    <form action="server.php" class="form" method="post" id="form">
                         <div class="form__side">
                             <div class="form__section">
                                 <label class="form__block">
                                 <div class="form__title">Имя</div>
-                                <input type="text" name="" class="form__input">
+                                <input type="text" name="name" class="form__input" required placeholder="Ваше имя" autocomplete="on" pattern="[А-Яа-яЁё]{2,50}">
                             </label>
                                 <label class="form__block">
                                 <div class="form__title">Телефон</div>
-                                <input type="text" name="" class="form__input">
+                                <input type="tel" name="phone" class="form__input" required pattern="[0-9]{6,10}" maxlength="10" placeholder="Ваш номер" autocomplete="on">
                             </label>
                             </div>
 
                             <div class="form__section">
                                 <label class="form__block">
                                 <div class="form__title">Улица</div>
-                                <input type="text" name="" class="form__input">
+                                <input type="text" name="street" class="form__input" autocomplete="on">
                             </label>
                             </div>
 
                             <div class="form__section  form__section--position">
                                 <label class="form__block">
                                 <div class="form__title">Дом</div>
-                                <input type="text" name="" class="form__input">
+                                <input type="text" name="house" class="form__input" autocomplete="on" pattern="[0-9]{1,999}">
                             </label>
                                 <label class="form__block">
                                 <div class="form__title">Корпус</div>
-                                <input type="text" name="" class="form__input">
+                                <input type="text" name="house-part" class="form__input" autocomplete="on" pattern="[0-9]{1,999}">
                             </label>
                                 <label class="form__block  form__block--mobile-margin">
                                 <div class="form__title">Квартира</div>
-                                <input type="text" name="" class="form__input">
+                                <input type="text" name="flat" class="form__input" autocomplete="on" pattern="[0-9]{1,999}">
                             </label>
                                 <label class="form__block  form__block--mobile-none">
                                 <div class="form__title">Этаж</div>
-                                <input type="text" name="" class="form__input">
+                                <input type="text" name="floor" class="form__input" autocomplete="on" pattern="[0-9]{1,350}">
                             </label>
                             </div>
                         </div>
@@ -743,7 +743,7 @@
 
                             <div class="form__section">
                                 <label class="form__block">
-                                <input type="checkbox" name="pay" value="money"  class="form__check">
+                                <input type="checkbox" name="not-call"  class="form__check" value="1">
                                 <div class="form__title  form__title--padding  form__title-check">Не перезванивать</div>
                             </label>
                             </div>
@@ -865,6 +865,13 @@
                 <p class="popup__text"></p>
             </div>
         </div>
+        
+        <div class="form-popup">
+            <div class="form-popup__wrapper">
+                <h5  class="form-popup__name"></h5>
+                <a href="#" class="close-btn">Закрыть</a>
+            </div>
+        </div>
     </div>
 
     <script src="jquery-3.3.1.js"></script>
@@ -943,7 +950,8 @@
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuLjb-iV3X_4aUsa2TbUyXn4NxU_RdUv4&callback=initMap">
     </script>
-
+    
+    <script src="js/form.js"></script>
 
 </body>
 
