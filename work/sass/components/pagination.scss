@@ -49,3 +49,9 @@
     left: -23px;
     transition-duration: 0.5s;
 } 
+
+#pp-nav.right{
+@include phone() {
+    right: 20px;
+}
+}

@@ -58,7 +58,7 @@
     h5 {
         font-family: 'Ubuntu-B';
         font-size: 14px;
-        margin-top: 0;
+        margin-top: 7px;
         margin-bottom: rem(10px);
     }
     p {
@@ -90,6 +90,7 @@
 .accordeon__item--active {
     .accordeon__item-content {
         height: 100px;
+        padding-top: 10px;
         transition-duration: 0.5s;
         @include tablet() {
             height: 190px;
